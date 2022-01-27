@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>Stripe Pattern</name>
+    <id>my_extensions.my_patterns.stripe</id>
+    <param name="angle" type="float" min="0.01" max="10000" gui-text="angle (deg):">45.0</param>
+    <param name="space" type="float" min="0.01" max="10000" gui-text="space (mm):">1.0</param>
+    <param name="thickness" type="float" min="0.01" max="10000" gui-text="rthickness (mm):">1.0</param>
+    <param name="name" type="string" gui-text="name:">new stripe</param>
+    <param name="color" type="color" appearance="colorbutton" gui-text="Color">#00FF00FF</param>
+    <effect>
+        <object-type>all</object-type>
+        <effects-menu>
+            <submenu _name="My Patterns"/>
+        </effects-menu>
+    </effect>
+    <script>
+        <command location="inx" interpreter="python">stripe_pattern.py</command>
+    </script>
+</inkscape-extension>
+
